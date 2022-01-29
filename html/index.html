@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="../background/logo.png" alt="Error loading imagae" class="logo">
+            <nav>
+                <ul id="menu-list">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">About us</a></li>
+                    <li><a href="">Cources</a></li>
+                    <li><a href="">Contact us</a></li>
+                </ul>
+            </nav>
+            <img src="../background/menu.png" alt="Error loading imagae" class="menu-icon" onclick="tooglemenu()">
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <h2>Cource <br>Web Development</h2>
+                <h3>Be the master of World Web</h3>
+                <p>Expres in 2days</p>
+                <h4>$20.00</h4>
+                <button type="button">Apply Now <img src="../background/arrow.png">
+                </button>
+            </div>
+            <div class="col-2">
+                <img src="../background/controller.png" class="controller">
+                <div class="color-box"></div>
+                <div class="add-btn">
+                    <img src="../background/add.png" alt="">
+                    <p><small>Add to cart</small></p>
+                </div>
+            </div>
+        </div>
+        <div class="social-links">
+            <img src="../background/fb.png" >
+            <img src="../background/tw.png" >
+            <img src="../background/ig.png" >
+        </div>
+    </div>
+
+    <script>
+        var menuList = document.getElementById("menu-list");
+        menuList.style.maxHeight = "0px";
+        function tooglemenu()
+        {
+            if(menuList.style.maxHeight=="0px")
+            {
+                menuList.style.maxHeight="130px";
+            }
+            else
+            {
+                 menuList.style.maxHeight = "0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
